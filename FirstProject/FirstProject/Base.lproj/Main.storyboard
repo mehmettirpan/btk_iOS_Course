@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EG-u0-Fle">
+                                <rect key="frame" x="174" y="300" width="38" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="ypY-3z-874"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbS-dz-YQ8">
+                                <rect key="frame" x="156" y="379" width="74" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="dQA-6e-JGa"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Change"/>
+                                <connections>
+                                    <action selector="change_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRU-1u-sXX"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lion-3576045__480" translatesAutoresizingMaskIntoConstraints="NO" id="A1c-6N-yU9">
+                                <rect key="frame" x="26" y="44" width="335" height="209"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A1c-6N-yU9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="0km-Ir-KEJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AbS-dz-YQ8" secondAttribute="bottom" constant="400" id="2qS-Dc-laO"/>
+                            <constraint firstItem="AbS-dz-YQ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="C3B-if-G3b"/>
+                            <constraint firstItem="0EG-u0-Fle" firstAttribute="top" secondItem="A1c-6N-yU9" secondAttribute="bottom" constant="8" id="Pyp-Pf-ysd"/>
+                            <constraint firstItem="A1c-6N-yU9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WNK-fr-1ZV"/>
+                            <constraint firstItem="0EG-u0-Fle" firstAttribute="centerX" secondItem="AbS-dz-YQ8" secondAttribute="centerX" id="r5O-LX-RKS"/>
+                            <constraint firstItem="AbS-dz-YQ8" firstAttribute="top" secondItem="0EG-u0-Fle" secondAttribute="bottom" constant="55" id="rRo-XL-TWh"/>
+                            <constraint firstItem="A1c-6N-yU9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="shE-ey-dCx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lion_label" destination="0EG-u0-Fle" id="VMy-LI-4uk"/>
+                        <outlet property="picture" destination="A1c-6N-yU9" id="euH-Ec-Kv5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.23076923076923" y="69.66824644549763"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lion-3576045__480" width="758" height="480"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
